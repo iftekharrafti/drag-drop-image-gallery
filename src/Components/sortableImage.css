@@ -16,6 +16,7 @@
   width: 18px;
   height: 18px;
   visibility: hidden;
+  cursor: pointer;
 }
 .image:hover .overlay {
   position: absolute;
