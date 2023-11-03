@@ -1,0 +1,51 @@
+.image {
+  border: 1px solid #c6c6c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+  position: relative;
+  border-radius: 10px;
+}
+
+.checkbox {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  visibility: hidden;
+}
+.image:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.image.checked {
+  opacity: 0.5;
+}
+.image.checked .checkbox {
+  visibility: visible; 
+}
+.image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 15px;
+}
+.images>:first-child .image {
+  height: 353px;
+  object-fit: cover;
+  padding: 15px;
+}
+
+.image:hover .checkbox {
+  visibility: visible;
+}
+.image:hover .image {
+  opacity: 0.5;
+}
