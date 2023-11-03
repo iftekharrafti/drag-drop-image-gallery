@@ -6,6 +6,7 @@
   background-color: #fdfdfd;
   position: relative;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .checkbox {
